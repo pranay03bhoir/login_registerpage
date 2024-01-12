@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+</head>
+
+<body>
+    <form action="">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5 shadow rounded mx-auto mt-3 p-3 bg-white">
+                    <h2 class="mb-4">Sign-up</h2>
+
+                    <div class="mb-3">
+                        <label for="fnm" class="form-label"><strong>Enter First name</strong></label>
+                        <input type="text" class="form-control" name="firstname" id="fnm" placeholder="First name" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="lnm" class="form-label"><strong>Enter middle name</strong></label>
+                        <input type="text" class="form-control" name="lastname" id="lnm" placeholder="Middle name (optional)">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="lnm" class="form-label"><strong>Enter Last name</strong></label>
+                        <input type="text" class="form-control" name="lastname" id="lnm" placeholder="Last name" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="unm" class="form-label"><strong>Enter Username</strong></label>
+                        <input type="text" class="form-control" name="Username" id="unm" placeholder="Username" onkeyup="usernamevalidation()" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="emailid" class="form-label"><strong>Enter E-mail</strong></label>
+                        <input type="text" class="form-control" name="usermail" id="emailid" placeholder="Email" onkeyup="emailvalidation()" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="pass1" class="form-label"><strong>Enter Password</strong></label>
+                        <input type="password" class="form-control" name="upass" id="pass1" placeholder="Password" onkeyup="passwordvalidation()" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="pass2" class="form-label"><strong>Repeat Password</strong></label>
+                        <input type="password" class="form-control" name="urpass" id="pass2" required placeholder="Password"
+                        onkeyup="compare()">
+                    </div>
+                    <div class="mb-4 ms-2">
+                        <input type="checkbox" class="form-check-input" name="choice" id="check" required >
+                        <label for="check" class="form-check-label"><strong>I accept all terms and condition.</strong></label>
+                    </div>
+
+                    <div class="mb-3">
+                        <button type="submit" class="btn btn-primary">Register</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+
+
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/register.js"></script>
+</body>
+
+</html>
